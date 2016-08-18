@@ -1,0 +1,30 @@
+body {
+  font-family: monospace;
+  background-image: url("background2.png");
+}
+
+h1, h2, h3, nav {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+h1, h2 {
+  background-color: rgba(242, 242, 242, 0.5)
+}
+
+#input {
+  width: 350px;
+  height: 100px;
+}
+
+.container {
+  border: 3px solid grey;
+  padding: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+a {
+  color: red;
+}

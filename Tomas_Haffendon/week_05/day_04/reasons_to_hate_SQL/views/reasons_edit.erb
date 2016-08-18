@@ -1,0 +1,19 @@
+<h2>Here you can inject more HATE into your reason</h2>
+
+<form action="/reasons/<%= @reason['id'] %>" method="POST">
+
+  <p>
+    <label for="">Reason: </label>
+    <input type="text" name="reason" value="<%= @reason['reason']%>">
+  </p>
+
+  <p>
+    <label for="">Description:</label>
+  </p>
+  <p>
+    <input id="input" type="text" name="description" value="<%= @reason['description'] %>">
+  </p>
+
+  <input type="submit" value="Submit a reason">
+
+</form>

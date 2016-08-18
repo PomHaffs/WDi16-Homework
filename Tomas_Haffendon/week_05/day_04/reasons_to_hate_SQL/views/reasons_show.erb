@@ -1,0 +1,10 @@
+<h2>GET /reasons/:id - You should be able to edit or delete a reason from this page of HATE for <%= @reason["id"] %></h2>
+
+<h3><%= @reason["reason"] %></h3>
+<h3><%= @reason["description"] %></h3>
+
+
+<h3><%= @reason["decription"] %></h3>
+
+<a href="/reasons/<%= @reason['id'] %>/edit">Edit the HATE</a>
+<a href="/reasons/<%= @reason['id'] %>/delete">Delete the HATE</a>
