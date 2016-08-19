@@ -1,0 +1,12 @@
+<h2>This is a list of all the reasons by SQL makes me HATE</h2>
+
+<% @all_reasons.each do |reason| %>
+
+<ul>
+  <li>
+<a href="/reasons/<%= reason["id"]%>">ID number of <%= reason["id"]%></a>
+    </li>
+  <li>Reason: <%= reason["reason"] %></li>
+  <li>Description: <%= reason["description"] %></li>
+</ul>
+<% end %>
