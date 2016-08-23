@@ -1,0 +1,13 @@
+<h2>This should show ALL the artists</h2>
+
+<ul>
+  <% @artists.each do |a| %>
+      <%= image_tag( a.image ) %>
+      <ul>
+        <li>Name: <%= link_to( a.name, "/artists/#{a.id}" ) %></li>
+        <li>Style: <%= a.style %></li>
+      </ul>  
+  <% end %>
+
+
+</ul>

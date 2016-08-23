@@ -1,0 +1,16 @@
+<h2><%= @album.title %></h2>
+
+<%= image_tag( @album.image ) %>
+
+<p>Year: <%= @album.year %></p>
+
+<% if @album.artist %>
+  <p>Artist: <%= link_to(@album.artist.name, @album.artist) %></p>
+<% end  %>
+
+<div class="controls">
+  <%= link_to "Edit Album", edit_work_path( @work ) %>
+  <%= link_to "Delete Album", @work, :method => :delete, :data => { :confirm => "IT's a great album, are you sure?" } %>
+</div>
+
+<hr>

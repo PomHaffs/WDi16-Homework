@@ -1,0 +1,22 @@
+<h4>This FORM is in _form.html.erb</h4>
+
+
+<%= form_for @album do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title, :required => true %>
+  </p>
+  <p>
+    <%= f.label :year %>
+    <%= f.text_field :year, :required => true %>
+  </p>
+  <p>
+    <%= f.label :image %>
+    <%= f.url_field :image, :required => true %>
+  </p>
+  <p>
+    <%= f.collection_select(:artist_id, Artist.all, :id, :name) %>
+  </p>
+
+  <%= f.submit %>
+<% end %>
