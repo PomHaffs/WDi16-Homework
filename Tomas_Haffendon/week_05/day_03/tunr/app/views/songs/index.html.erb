@@ -1,0 +1,11 @@
+<h1>Song List</h1>
+
+<hr>
+
+<div>
+  <% @songs.each do |a| %>
+    <div>
+      <li>Name: <%= link_to( a.name, "/songs/#{a.id}") %></li>
+    </div>
+  <% end %>
+</div>

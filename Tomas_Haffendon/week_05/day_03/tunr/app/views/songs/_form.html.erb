@@ -1,0 +1,12 @@
+
+<hr>
+
+<%= form_for @song do |f| %>
+
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name, :required => true %>
+  </p>
+
+  <%= f.submit %>
+<% end %>

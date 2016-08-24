@@ -1,0 +1,13 @@
+<h1>Edit: <%= @song.name %></h1>
+
+<hr>
+
+<%= render :partial => 'form' %>
+
+<div class="controls">
+  <%= link_to "Edit #{@song.name}", "/songs/#{@song.id}/edit" %>
+  <%= link_to "Delete #{@song.name}", "/songs/#{@song.id}",
+  :method => :delete, :data => {:confirm => "Are you sure?"}%>
+</div>
+
+<hr>

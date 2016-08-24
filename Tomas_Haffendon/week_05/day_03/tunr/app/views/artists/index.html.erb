@@ -1,0 +1,13 @@
+<!-- landing page for artists, like 'show all' -->
+<h1>Artist List</h1>
+
+<hr>
+
+<div>
+  <% @artists.each do |a| %>
+    <div>
+      <li><%= image_tag( a.image ) %></li>
+      <li>Name: <%= link_to( a.name, "/artists/#{a.id}") %></li>
+    </div>
+  <% end %>
+</div>

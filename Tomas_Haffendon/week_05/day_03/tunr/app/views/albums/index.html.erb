@@ -1,0 +1,12 @@
+<h1>Album List</h1>
+
+<hr>
+
+<div>
+  <% @albums.each do |b| %>
+    <div>
+      <li><%= image_tag( b.image ) %></li>
+      <li>Name: <%= link_to( b.name, "/albums/#{b.id}") %></li>
+    </div>
+  <% end %>
+</div>

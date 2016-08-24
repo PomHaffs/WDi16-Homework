@@ -1,0 +1,15 @@
+<h1>Edit: <%= @artist.name %></h1>
+
+<hr>
+
+<%= image_tag @artist.image %>
+
+<%= render :partial => 'form' %>
+
+<div class="controls">
+  <%= link_to "Edit #{@artist.name}", "/artists/#{@artist.id}/edit" %>
+  <%= link_to "Delete #{@artist.name}", "/artists/#{@artist.id}",
+  :method => :delete, :data => {:confirm => "Are you sure?"}%>
+</div>
+
+<hr>

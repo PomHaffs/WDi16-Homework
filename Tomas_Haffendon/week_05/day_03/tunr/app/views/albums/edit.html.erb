@@ -1,0 +1,15 @@
+<h1>Edit: <%= @album.name %></h1>
+
+<hr>
+
+<%= image_tag @album.image %>
+
+<%= render :partial => 'form' %>
+
+<div class="controls">
+  <%= link_to "Edit #{@album.name}", "/albums/#{@album.id}/edit" %>
+  <%= link_to "Delete #{@album.name}", "/albums/#{@album.id}",
+  :method => :delete, :data => {:confirm => "Are you sure?"}%>
+</div>
+
+<hr>

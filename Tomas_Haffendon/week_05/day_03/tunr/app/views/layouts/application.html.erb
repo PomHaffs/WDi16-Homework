@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tunr</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav>
+  <%= link_to "Artists", "/artists" %>
+  <%= link_to "Add Artist", "/artists/new" %>
+  <%= link_to "Albums", "/albums" %>
+  <%= link_to "Add Album", "/albums/new" %>
+  <%= link_to "Songs", "/songs" %>
+  <%= link_to "Add Song", "/songs/new" %>
+</nav>
+
+
+<%= yield %>
+
+</body>
+</html>
